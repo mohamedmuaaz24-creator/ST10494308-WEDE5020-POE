@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gallery</title>
+    <meta name="description" content="A brief, keyword-rich description of your page or business.">
+    <meta name="keywords" content="cybersecurity, bug bounty, penetration testing, vulnerability disclosure, Bugcrowd">
+    <meta name="robots" content="index, follow">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <div class="header-container">
+            <a href="Index.html">
+                <img src="Assets/Images/Bugcrowd-Logo-Wordmark-5.svg" alt="Bugcrowd Logo" class="logo">
+            </a>
+            <h1 class="slogan">Securing The Future, One Bug at a Time</h1>
+            <div class="header-buttons">
+                <button class="button" onclick="openPopup('signup')">Sign Up</button>
+                <button class="button" onclick="openPopup('login')">Log In</button>
+            </div>
+        </div>
+    </header>
+   <!-- Navigation Bar -->
+         <nav>
+            <ul class="nav-links">
+                 <li><a href="Index.html">Home</a></li>
+                 <li><a href="About.html">About</a></li>
+                 <li><a href="ProductsandServices.html">Products and Services</a></li>
+                 <li><a href="gallery.html">Gallery</a></li>
+                 <li><a href="Enquiry.html">Enquiry</a></li>
+                 <li><a href="ContactUs.html">Contact Us</a></li>
+            </ul>
+         </nav>
+    <main>
+        <section>
+        <h2>Gallery</h2>
+        <div class="gallery-container">
+            <img class="Gthumb" src="Assets/gallery/SocialShareGraphics-Bugcrowd-3.jpg" alt="gallery image 1" data-caption="Friendly Bugcrowd Management Team">
+            <img class="Gthumb" src="Assets/gallery/BugCrowd Team.jpg" alt="gallery image 2" data-caption="Welcoming Bugcrowd Team">
+            <img class="Gthumb" src="Assets/gallery/574114a0-08ae-11f0-88b7-5556e7b55c5e.jpg" alt="gallery image 3" data-caption="Accomodating CoWorkers always willing to help">
+            <img class="Gthumb" src="Assets/gallery/redteam_AdobeStockImages-scaled.jpg" alt="gallery image 4" data-caption="Top-notch facilities, equipment and resources for our team">
+            <img class="Gthumb" src="Assets/gallery/Bug-Bounty-Program-Announcement-1.png" alt="gallery image 4" data-caption="One of the many services we offer at Bugcrowd">
+            <img class="Gthumb" src="Assets/gallery/Bugcrowd-And-Caseys-Client-Base.webp" alt="gallery image 5" data-caption="We are well funded and have a large client base  ">
+        </div>
+
+
+  
+        <!-- Lightbox Overlay -->
+            <div class="lightbox-overlay" id="lightbox" style="display:none;">
+                <span class="lightbox-close" id="lightbox-close">&times;</span>
+                <span class="lightbox-arrow" id="lightbox-prev">&#10094;</span>
+                <img class="lightbox-image" id="lightbox-img" src="" alt="Team Member">
+                <span class="lightbox-arrow" id="lightbox-next">&#10095;</span>
+                <div class="lightbox-caption" id="lightbox-caption"></div>
+            </div>
+        </section>
+    </main>
+     <!-- Footer -->
+    <footer>
+        <div class="footer-container">
+            <!-- About Section -->
+            <div class="footer-about">
+                <h4><a href="About.html">About Bugcrowd</a></h4>
+                <p>
+                    Bugcrowd is the trusted platform for crowdsourced cybersecurity. We connect organizations with a global community of security researchers to identify and resolve vulnerabilities.
+                </p>
+            </div>
+
+            <!-- Contact Section -->
+            <div class="footer-contact">
+                <h4><a href="ContactUs.html">Contact Us</a></h4>
+                <p>Email: <a href="mailto:support@bugcrowd.com">support@BugCrowd.com</a></p>
+                <p>Phone: +1 (123) 456-7890</p>
+                <p>Follow us on: 
+                    <a href="#">Twitter</a>, 
+                    <a href="#">LinkedIn</a>
+                </p>
+            </div>
+        </div>
+        <div id="dateTime" class="date-time"></div>
+    </footer>
+    <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-form" id="signup-form">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="popup-form" id="login-form">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Log In</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+ <script src="js/script.js"></script>
+</body>
+</html>

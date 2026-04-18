@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>About Bugcrowd</title>
+    <meta name="description" content="A brief, keyword-rich description of your page or business.">
+    <meta name="keywords" content="cybersecurity, bug bounty, penetration testing, vulnerability disclosure, Bugcrowd">
+    <meta name="robots" content="index, follow">
+   <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+   <!-- Header Section with Logo and Slogan -->
+   <header>
+      <div class="header-container">
+          <a href="Index.html">
+              <img src="Assets/Images/Bugcrowd-Logo-Wordmark-5.svg" alt="Bugcrowd Logo" class="logo">
+          </a>
+          <h1 class="slogan">Securing The Future, One Bug at a Time</h1>
+           <div class="header-buttons">
+                <button class="button" onclick="openPopup('signup')">Sign Up</button>
+                <button class="button" onclick="openPopup('login')">Log In</button>
+            </div>
+      </div>
+   </header>
+
+   <!-- Navigation Bar -->
+   <nav>
+      <ul class="nav-links">
+          <li><a href="Index.html">Home</a></li>
+          <li><a href="About.html">About</a></li>
+          <li><a href="ProductsandServices.html">Products and Services</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="Enquiry.html">Enquiry</a></li>
+          <li><a href="ContactUs.html">Contact Us</a></li>
+      </ul>
+   </nav>
+
+   <!-- Main Content -->
+   <main>
+      <section>
+          <h1>About Bugcrowd</h1>
+          <p>
+              Bugcrowd was founded with the vision of revolutionizing cybersecurity by leveraging the power of the global community. Since its inception, Bugcrowd has grown to become the trusted platform for crowdsourced security, connecting organizations with a diverse network of skilled security researchers. Over the years, we have helped countless businesses identify and resolve vulnerabilities, ensuring a safer digital world for everyone.
+          </p>
+      </section>
+
+      <section>
+          <h2>Our Mission</h2>
+          <p>
+              Our mission is to secure the future by empowering organizations to proactively identify and address vulnerabilities before they can be exploited. We aim to bridge the gap between businesses and the global security community, fostering collaboration and innovation to create a safer digital ecosystem.
+          </p>
+      </section>
+
+      <section>
+          <h2>Our Vision</h2>
+          <p>
+              At Bugcrowd, we envision a world where cybersecurity is no longer a barrier to innovation. By harnessing the collective expertise of security researchers worldwide, we strive to make the internet a safer place for individuals, businesses, and governments alike.
+          </p>
+      </section>
+
+      <section>
+          <h2>Meet Our Team</h2>
+          <div class="team-container">
+              <div class="team-member">
+                  <img src="Assets/Images/DaveGerry-1.png" alt="Dave Gerry">
+                  <h3>Dave Gerry</h3>
+                  <p>CEO</p>
+              </div>
+              <div class="team-member">
+                  <img src="Assets/Images/Caseye.png" alt="Casey Ellis">
+                  <h3>Casey Ellis</h3>
+                  <p>Founder and Advisor</p>
+              </div>
+              <div class="team-member">
+                  <img src="Assets/Images/NickMcKenzie-Headshot-1.png" alt="Nicholas McKenzie">
+                  <h3>Nicholas McKenzie</h3>
+                  <p>Chief Info and Security Officer</p>
+              </div>
+              <div class="team-member">
+                  <img src="Assets/Images/RobertTaccini-Headshot.png" alt="Robert Taccini">
+                  <h3>Robert Taccini</h3>
+                  <p>Chief Financial Officer</p>
+              </div>
+          </div>
+      </section>
+   </main>
+
+   <!-- Footer -->
+   <footer>
+      <div class="footer-container">
+          <div class="footer-about">
+              <h4><a href="css/style.css">About Bugcrowd</a></h4>
+              <p>
+                  Bugcrowd is the trusted platform for crowdsourced cybersecurity. We connect organizations with a global community of security researchers to identify and resolve vulnerabilities.
+              </p>
+          </div>
+          <div class="footer-contact">
+              <h4>Contact Us</h4>
+              <p>Email: <a href="mailto:support@bugcrowd.com">support@bugcrowd.com</a></p>
+              <p>Phone: +1 (123) 436-0601</p>
+              <p>Follow us on: 
+                  <a href="#">Twitter</a>, 
+                  <a href="#">LinkedIn</a>
+              </p>
+          </div>
+      </div>
+    <div id="dateTime" class="date-time"></div>
+   </footer>
+   <div id="popup-overlay" class="popup-overlay">
+        <div class="popup-form" id="signup-form">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Sign Up</h2>
+            <form>
+                <input type="text" placeholder="Username" required>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+        <div class="popup-form" id="login-form">
+            <span class="close-btn" onclick="closePopup()">&times;</span>
+            <h2>Log In</h2>
+            <form>
+                <input type="email" placeholder="Email" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit">Log In</button>
+            </form>
+        </div>
+    </div>
+   <script src="js/script.js"></script>
+</body>
+</html>
